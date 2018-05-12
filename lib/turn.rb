@@ -29,3 +29,8 @@ end
 def move(board, index, token = "X")
   board[index] = token
 end
+
+puts "welcome to tic tac toe"
+puts "Please enter 1-9:"
+
+user_input = gets.chomp
