@@ -45,5 +45,4 @@ def turn(board)
   end
 end
 
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-turn(board)
+turn
