@@ -33,4 +33,5 @@ end
 puts "welcome to tic tac toe"
 puts "Please enter 1-9:"
 
-user_input = gets
+user_input = gets.chomp
+
