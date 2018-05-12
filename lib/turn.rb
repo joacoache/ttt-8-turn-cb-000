@@ -39,5 +39,4 @@ def turn(user_input)
   end
 end
 
-user_input = gets.chomp 
 turn(user_input)
