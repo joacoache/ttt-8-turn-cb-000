@@ -39,4 +39,4 @@ def turn(user_input)
   end
 end
 
-turn
+turn()
