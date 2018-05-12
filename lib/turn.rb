@@ -30,8 +30,6 @@ def move(board, index, token = "X")
   board[index] = token
 end
 
-puts "welcome to tic tac toe"
-
 def turn(user_input)
   puts "Please enter 1-9:"
   user_input = gets.chomp
@@ -40,3 +38,5 @@ def turn(user_input)
     turn(user_input)
   end
 end
+
+turn
