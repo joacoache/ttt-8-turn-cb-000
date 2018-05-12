@@ -1,5 +1,5 @@
 
-def display_board(board = [" ", " ", " ", " ", " ", " ", " ", " ", " "])
+def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
   puts " #{board[3]} | #{board[4]} | #{board[5]} "
@@ -31,19 +31,3 @@ def move(board, index, token = "X")
   board[index] = token
 end
 
-def turn(board)
-  display_board(board)
-  puts "Please enter 1-9:"
-  user_input = gets.chomp
-  index = input_to_index(user_input)
-  token = "X"
-  if valid_move?(board, index) && position_taken?(board, index)
-    move(board, index, token)
-    display_board(board)
-  else
-    turn(board)
-  end
-end
-
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-turn(board)
